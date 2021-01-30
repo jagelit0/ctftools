@@ -45,7 +45,7 @@ echo -e "${END}"
 echo -e "${YELLOW}[+] Cloning JWTool [+]${END}"
 echo -e "${CYAN}"
 git clone https://github.com/ticarpi/jwt_tool.git
-sudo pytho3 -m pip install termcolor cprint pycryptodomex requests
+sudo python3 -m pip install termcolor cprint pycryptodomex requests
 echo -e "${END}"
 echo -e "${YELLOW}[+] Cloning NoSQLMap [+]${END}"
 echo -e "${CYAN}"
