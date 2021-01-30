@@ -13,17 +13,17 @@ echo -e "[*] Please, execute the script as sudo [*]"
 echo -e "${END}"
 read -p "Select where you want to install the script: " dirdown
 
-if [ -z $dirdown ]; then
+if [ -z "$dirdown" ]; then
          echo -e "${RED}[!] Specify a directory, please [!] ${END}"
 else
-	mkdir $dirdown/
-	mkdir $dirdown/Tools
-	mkdir $dirdown/Wordlists
-	mkdir $dirdown/LinuxScripts
+	mkdir "$dirdown"/
+	mkdir "$dirdown"/Tools
+	mkdir "$dirdown"/Wordlists
+	mkdir "$dirdown"/LinuxScripts
 fi
 
 cloneRepo(){
-cd $dirdown/Tools
+cd "$dirdown"/Tools || exit
 echo -e "${YELLOW}[+] Cloning Dirsearch [+]${END}"
 echo -e "${CYAN}"
 git clone https://github.com/maurosoria/dirsearch.git
@@ -42,10 +42,10 @@ git clone https://github.com/ticarpi/jwt_tool.git
 sudo pytho3 -m pip install termcolor cprint pycryptodomex requests
 echo -e "${END}"
 echo -e "${YELLOW}[+] Cloning NoSQLMap [+]${END}"
-echo -e "${CYAN}
+echo -e "${CYAN}"
 git clone https://github.com/codingo/NoSQLMap.git
 echo -e "${END}"
-cd ../Wordlists
+cd ../Wordlists || exit
 echo -e "${YELLOW}[+] Cloning SecLists [+]${END}"
 echo -e "${CYAN}"
 git clone https://github.com/danielmiessler/SecLists.git
@@ -64,7 +64,7 @@ echo -e "${PURPLE}[+] DONE [+] ${END}"
 }
 
 installScripts(){
-cd ../LinuxScripts
+cd ../LinuxScripts || exit
 echo -e "${YELLOW} [...] Downloading Linux Scripts [...] ${END}"
 echo -e "${CYAN}"
 sudo wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
@@ -78,3 +78,5 @@ installTools
 installScripts
 
 echo -e "${RED}[+] EXITING... [+] ${END}"
+
+exit 0
