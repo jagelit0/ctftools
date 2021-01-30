@@ -1,2 +1,2 @@
-# ctftools
-tools recopilation for ctfs
+# CTF TOOLS
+Personal recopilation of tools and wordlists
