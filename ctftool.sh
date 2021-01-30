@@ -47,7 +47,7 @@ sudo apt-get install fcrackzip -y
 echo -e "${PURPLE}[+] DONE [+] ${END}"
 }
 
-#cloneRepo
-#installTools
+cloneRepo
+installTools
 
 echo -e "${RED}[+] EXITING... [+] ${END}"
