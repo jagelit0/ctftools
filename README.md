@@ -2,9 +2,9 @@
 
 Personal recopilation of tools, wordlists and scripts.
 
-## ToDo :notebook:
--[X] Add more stuff
--[X] Add more stuff
--[X] Add more stuff
--[X] Add more stuff
+## ToDo List :notebook:
+- [ ] Add more stuff
+- [ ] Add more stuff
+- [ ] Add more stuff
+- [ ] Add more stuff
 
