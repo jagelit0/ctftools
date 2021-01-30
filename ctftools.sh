@@ -14,17 +14,23 @@ echo -e "${END}"
 read -p "Select where you want to install the script: " dirdown
 
 if [ -z "$dirdown" ]; then
-         echo -e "${RED}[!] Specify a directory, please [!] ${END}"
+         echo -e "${RED}${END}[!] Specify a directory, please [!] ${END}"
 else
-	mkdir "$dirdown"/
-	mkdir "$dirdown"/Tools
-	mkdir "$dirdown"/Wordlists
-	mkdir "$dirdown"/LinuxScripts
+	if [ ! -d "$dirdown" ]; then
+		mkdir "$dirdown"/
+		mkdir "$dirdown"/Tools
+		mkdir "$dirdown"/Wordlists
+		mkdir "$dirdown"/LinuxScripts
+	else
+		mkdir "$dirdown"/Tools
+		mkdir "$dirdown"/Wordlists
+		mkdir "$dirdown"/LinuxScripts
+	fi
 fi
 
 cloneRepo(){
 cd "$dirdown"/Tools || exit
-echo -e "${YELLOW}[+] Cloning Dirsearch [+]${END}"
+echo -e "${YELLOW}${END}[+] Cloning Dirsearch [+]${END}"
 echo -e "${CYAN}"
 git clone https://github.com/maurosoria/dirsearch.git
 echo -e "${END}"
