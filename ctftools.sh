@@ -41,10 +41,14 @@ echo -e "${CYAN}"
 git clone https://github.com/ticarpi/jwt_tool.git
 sudo pytho3 -m pip install termcolor cprint pycryptodomex requests
 echo -e "${END}"
+echo -e "${YELLOW}[+] Cloning NoSQLMap [+]${END}"
+echo -e "${CYAN}
+git clone https://github.com/codingo/NoSQLMap.git
+echo -e "${END}"
 cd ../Wordlists
 echo -e "${YELLOW}[+] Cloning SecLists [+]${END}"
 echo -e "${CYAN}"
-#git clone https://github.com/danielmiessler/SecLists.git
+git clone https://github.com/danielmiessler/SecLists.git
 echo -e "${END}"
 echo -e "${YELLOW}[+] All repositories cloned [+]${END}"
 echo -e "${PURPLE}[+] DONE [+] ${END}"
