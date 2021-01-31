@@ -2,6 +2,10 @@
 
 Personal recopilation of tools, wordlists and scripts.
 
+### Tools :bomb:
+* (Dirsearch)[https://github.com/maurosoria/dirsearch]
+* (NmapAutomator)[https://github.com/21y4d/nmapAutomator]
+
 ## ToDo List :notebook:
 - [ ] Add more stuff
 - [ ] Add more stuff
