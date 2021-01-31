@@ -57,7 +57,7 @@ git clone https://github.com/codingo/NoSQLMap.git
 echo -e "${END}"
 echo -e "${YELLOW}[+] Cloning GraphQLMap [+]${END}"
 echo -e "${CYAN}"
-git clone https://github.com/swisskyrepo/GraphQLmap
+git clone https://github.com/swisskyrepo/GraphQLmap.git
 echo -e "${END}"
 echo -e "${YELLOW}[+] Cloning PHPGGC [+]${END}"
 echo -e "${CYAN}"
