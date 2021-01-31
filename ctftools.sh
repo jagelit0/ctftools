@@ -38,6 +38,10 @@ echo -e "${YELLOW}[+] Cloning nmapAutomator [+]${END}"
 echo -e "${CYAN}"
 git clone https://github.com/21y4d/nmapAutomator.git
 echo -e "${END}"
+echo -e "${YELLOW}[+] Cloning Bfac [+]${END}"
+echo -e "${CYAN}"
+git clone https://github.com/mazen160/bfac.git
+echo -e "${END}"
 echo -e "${YELLOW}[+] Cloning GTFONow [+]${END}"
 echo -e "${CYAN}"
 git clone https://github.com/Frissi0n/GTFONow.git
@@ -51,13 +55,20 @@ echo -e "${YELLOW}[+] Cloning NoSQLMap [+]${END}"
 echo -e "${CYAN}"
 git clone https://github.com/codingo/NoSQLMap.git
 echo -e "${END}"
+echo -e "${YELLOW}[+] Cloning GraphQLMap [+]${END}"
+echo -e "${CYAN}"
+git clone https://github.com/swisskyrepo/GraphQLmap
+echo -e "${END}"
+echo -e "${YELLOW}[+] Cloning PHPGGC [+]${END}"
+echo -e "${CYAN}"
+git clone https://github.com/ambionics/phpggc.git
+echo -e "${END}"
 cd ../Wordlists || exit
 echo -e "${YELLOW}[+] Cloning SecLists [+]${END}"
 echo -e "${CYAN}"
 git clone https://github.com/danielmiessler/SecLists.git
 echo -e "${END}"
-echo -e "${YELLOW}[+] All repositories cloned [+]${END}"
-echo -e "${PURPLE}[+] DONE [+] ${END}"
+echo -e "${PURPLE}[+] All repositories cloned [+]${END}"
 }
 
 installTools(){
@@ -76,6 +87,7 @@ echo -e "${CYAN}"
 sudo wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
 sudo wget https://raw.githubusercontent.com/mzet-/linux-exploit-suggester/master/linux-exploit-suggester.sh
 sudo wget https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/master/lse.sh
+sudo apt install libimage-exiftool-perl -y
 echo -e "${END}"
 }
 
