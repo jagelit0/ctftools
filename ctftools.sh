@@ -30,7 +30,7 @@ fi
 
 cloneRepo(){
 cd "$dirdown"/Tools || exit
-echo -e "${YELLOW}[+] Cloning Dirsearch [+]${END}"
+echo -e "${YELLOW}${END}[+] Cloning Dirsearch [+]${END}"
 echo -e "${CYAN}"
 git clone https://github.com/maurosoria/dirsearch.git
 echo -e "${END}"
